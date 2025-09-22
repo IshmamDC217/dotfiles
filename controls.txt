@@ -1,0 +1,67 @@
+### 🔹 System / Hyprland
+
+* SUPER + SHIFT + Q → Kill active window
+* SUPER + X → Logout menu
+* SUPER + L → Lock screen
+* SUPER + M → Exit Hyprland
+* SUPER + F → Fullscreen (and notify)
+* SUPER + S → Toggle pseudotile (and notify)
+* SUPER + Space → Toggle floating & center window
+
+---
+
+### 🔹 Focus & Window Movement
+
+* SUPER + ←/→/↑/↓ → Move focus
+* SUPER + SHIFT + ←/→/↑/↓ → Move active window
+* SUPER + CTRL + ←/→/↑/↓ → Resize active window
+
+---
+
+### 🔹 Workspaces
+
+* SUPER + \[1–9,0] → Switch workspace (1–10)
+* SUPER + SHIFT + \[1–9,0] → Move window to workspace (1–10)
+* SUPER + S → Toggle special workspace “magic”
+* SUPER + CTRL + S → Move window to special workspace “magic”
+* SUPER + Mouse Wheel ↓ → Next workspace
+* SUPER + Mouse Wheel ↑ → Previous workspace
+
+---
+
+### 🔹 Mouse
+
+* SUPER + Left Click → Move window
+* SUPER + Right Click → Resize window
+
+---
+
+### 🔹 Media / System Keys
+
+* Audio Raise → Volume up (max 140%)
+* Audio Lower → Volume down (max 140%)
+* Audio Mute → Toggle mute
+* Brightness Up → Increase brightness
+* Brightness Down → Decrease brightness
+* Audio Next → Next track
+* Audio Prev → Previous track
+* Audio Play → Play
+* Audio Stop → Pause
+
+---
+
+### 🔹 Applications
+
+* SUPER + R → Launcher (fuzzel)
+* SUPER + Return → Terminal (alacritty)
+* SUPER + E → File manager (nautilus)
+* SUPER + W → Browser (brave)
+* SUPER + SHIFT + W → Incognito browser
+* SUPER + C → VS Code
+
+---
+
+### 🔹 Screenshots
+
+* Print Screen → Screenshot monitor → clipboard
+* SUPER + SHIFT + S → Screenshot region → clipboard

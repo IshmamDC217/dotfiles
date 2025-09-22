@@ -1,10 +1,38 @@
 live_config_reload = true
 
-[font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-size = 11.0
-
 [colors]
-[colors.primary]
-  background = '0x121212'
-  foreground = '0xD4D4D4'
+
+  # Default colors
+  [colors.primary]
+    background = '0x121212'  # Dark background
+    foreground = '0xc9d1d9'  # Keeping the foreground light for better readability
+
+  # Cursor colors
+  [colors.cursor]
+    text = '0x171917'  # Dark cursor text
+    cursor = '0xc9d1d9'  # Light cursor
+
+  # Normal colors
+  [colors.normal]
+    black = '0x090908'  # Near black for black
+    red = '0xc5703d'    # Deep red for red
+    green = '0xebcd99'  # Golden brown for green (though it's a warmer shade)
+    yellow = '0xbf9357' # Golden brown (you may consider keeping this consistent with green)
+    blue = '0xb56547'   # Light grey/brownish for blue
+    magenta = '0xbc8cff' # Keeping the magenta as it fits the palette
+    cyan = '0x39c5cf'   # Keeping cyan as it complements the palette
+    white = '0xb1bac4'  # Light grey
+
+  # Bright colors
+  [colors.bright]
+    black = '0x323332'  # Dark grey for bright black
+    red = '0x561f20'    # Deep red for bright red
+    green = '0xbf9357'  # Golden brown for bright green
+    yellow = '0xe3b341' # Brighter yellow to distinguish from regular
+    blue = '0x65635b'   # Keeping light grey/brownish for bright blue
+    magenta = '0xbc8cff' # Bright magenta
+    cyan = '0x39c5cf'   # Bright cyan
+    white = '0xb1bac4'  # Bright white (light grey)
+
+[window]
+  opacity = 0.8  # Adjust opacity to desired level
