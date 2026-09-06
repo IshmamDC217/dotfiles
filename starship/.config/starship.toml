@@ -1,3 +1,6 @@
+# Pastel theme - see [palettes.pastel] at the end of this file
+palette = 'pastel'
+
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
@@ -17,6 +20,8 @@ format = '\[[$symbol($version(-$name))]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
  
 [cmd_duration]
+style = 'subtext'
+min_time = 2000
 format = '\[[⏱ $duration]($style)\]'
  
 [cobol]
@@ -56,9 +61,11 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
  
 [git_branch]
+style = 'bold peach'
 format = '\[[$symbol$branch]($style)\]'
  
 [git_status]
+style = 'bold yellow'
 format = '([\[$all_status$ahead_behind\]]($style))'
  
 [golang]
@@ -158,7 +165,10 @@ format = '\[[$symbol$workspace]($style)\]'
 format = '\[[$time]($style)\]'
  
 [username]
-format = '\[[$user]($style)\]'
+style_user = 'bold pink'
+style_root = 'bold red'
+show_always = true
+format = '[$user]($style)'
  
 [vagrant]
 format = '\[[$symbol($version)]($style)\]'
@@ -169,3 +179,37 @@ format = '\[[$symbol($version)]($style)\]'
 [zig]
 format = '\[[$symbol($version)]($style)\]'
 
+
+# ─────────────────────────────────────────────────────────────
+#  Pastel theme (Catppuccin Mocha)
+# ─────────────────────────────────────────────────────────────
+
+# hostname is SSH-only by default, which is why `user@host` vanished locally
+[hostname]
+ssh_only = false
+format = '[@$hostname]($style) '
+style = 'bold blue'
+
+[directory]
+style = 'bold mauve'
+truncation_length = 3
+truncate_to_repo = true
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+[palettes.pastel]
+rosewater = '#f5e0dc'
+flamingo  = '#f2cdcd'
+pink      = '#f5c2e7'
+mauve     = '#cba6f7'
+red       = '#f38ba8'
+peach     = '#fab387'
+yellow    = '#f9e2af'
+green     = '#a6e3a1'
+teal      = '#94e2d5'
+sky       = '#89dceb'
+blue      = '#89b4fa'
+lavender  = '#b4befe'
+subtext   = '#a6adc8'
